@@ -99,6 +99,8 @@
     <modules>
         <module>cloud</module>
         <module>serverprovider</module>
+        <module>consumer</module>
+        <module>serverprovider2</module>
     </modules>
 
 
