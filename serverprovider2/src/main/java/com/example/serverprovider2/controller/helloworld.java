@@ -19,7 +19,7 @@ public class helloworld {
     @RequestMapping("/test")
     @ResponseBody
     public String test(){
-        return "hello"+serverPort;
+        return "hello123"+serverPort;
     }
 
 }
