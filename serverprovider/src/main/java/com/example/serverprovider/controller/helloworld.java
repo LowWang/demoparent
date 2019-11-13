@@ -36,6 +36,7 @@ public class helloworld {
     @GetMapping("/getuser")
     public String getuser(int i){
         User user =userservice.getEmp(i);
+        System.out.println(i);
         return user.getId();
     }
 
