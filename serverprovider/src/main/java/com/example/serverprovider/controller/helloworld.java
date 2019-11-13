@@ -30,13 +30,12 @@ public class helloworld {
             e.printStackTrace();
         }
         System.out.println(user);
-        return "hello1sdafafa"+serverPort;
+        return "hello1"+serverPort;
     }
 
     @GetMapping("/getuser")
     public String getuser(int i){
         User user =userservice.getEmp(i);
-        System.out.println(i);
         return user.getId();
     }
 
