@@ -6,6 +6,7 @@ import com.example.serverprovider.entity.User;
 import com.example.serverprovider.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -29,7 +30,13 @@ public class helloworld {
             e.printStackTrace();
         }
         System.out.println(user);
-        return "hello12356"+serverPort;
+        return "hello1sda"+serverPort;
+    }
+
+    @GetMapping("/getuser")
+    public String getuser(int i){
+        User user =userservice.getEmp(i);
+        return user.getId();
     }
 
 }
