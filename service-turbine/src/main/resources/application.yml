@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: service-turbine
+server:
+  port: 8099
+management:
+  port: 8100
+eureka:
+  client:
+    service-url:
+      defaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/
+turbine:
+  app-config: consumer-feign,consumer #多个用逗号分隔
+  cluster-name-expression: new String("default")
+  combine-host-port: true
