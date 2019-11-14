@@ -1,0 +1,9 @@
+server:
+  port: 9100
+spring:
+  application:
+    name: service-api-gateway
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/
